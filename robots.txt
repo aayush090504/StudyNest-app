@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+Allow: /login
+Allow: /privacy
+Allow: /terms
+
+# Disallow settings and internal actions to prevent cluttering search results
+Disallow: /settings
+
+# Sitemap Location for Google Search Console and crawlers
+Sitemap: https://ais-pre-ndd5pqvevy3rljrccu2dch-332117312810.asia-southeast1.run.app/sitemap.xml

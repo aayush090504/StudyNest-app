@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ais-pre-ndd5pqvevy3rljrccu2dch-332117312810.asia-southeast1.run.app/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://ais-pre-ndd5pqvevy3rljrccu2dch-332117312810.asia-southeast1.run.app/login</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://ais-pre-ndd5pqvevy3rljrccu2dch-332117312810.asia-southeast1.run.app/dashboard</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://ais-pre-ndd5pqvevy3rljrccu2dch-332117312810.asia-southeast1.run.app/privacy</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://ais-pre-ndd5pqvevy3rljrccu2dch-332117312810.asia-southeast1.run.app/terms</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+</urlset>
