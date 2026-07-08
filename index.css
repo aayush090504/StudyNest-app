@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Comfortaa:wght@300..700&family=Montserrat:wght@400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom global aesthetics for cozy environments */
+body {
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Custom time font families */
+.font-timer-mono {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+.font-timer-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+.font-timer-cute {
+  font-family: "Comfortaa", "Inter", sans-serif;
+}
+.font-timer-modern {
+  font-family: "Montserrat", sans-serif;
+}
+.font-timer-sans {
+  font-family: "Inter", sans-serif;
+}
+
+/* Base scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 99px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Extra visual presets for themes if required */
+.theme-warm-cozy {
+  background-color: rgb(254, 252, 243);
+}
+
+.theme-dark-academia {
+  background-color: rgb(28, 25, 23);
+}
+
+.theme-pastel {
+  background-color: rgb(250, 245, 255);
+}
+
+.theme-forest {
+  background-color: rgb(240, 253, 244);
+}
+
+.theme-midnight {
+  background-color: rgb(2, 6, 23);
+}
+
+.theme-cyberpunk {
+  background-color: rgb(9, 9, 11);
+}
+
+.theme-matcha-latte {
+  background-color: rgb(240, 253, 244);
+}
+
+.theme-lavender-mist {
+  background-color: rgb(245, 243, 255);
+}
+
+.theme-autumn-leaves {
+  background-color: rgb(255, 247, 237);
+}
+
+.theme-espresso-bar {
+  background-color: rgb(28, 25, 23);
+}
+
+.theme-peach-sorbet {
+  background-color: rgb(255, 241, 242);
+}
+
+.theme-ocean-breeze {
+  background-color: rgb(240, 249, 255);
+}
