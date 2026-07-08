@@ -1,0 +1,8 @@
+{
+  "name": "StudyNest",
+  "description": "A cozy study and productivity web app featuring customizable Pomodoro timers, synthesis-ambient looping soundscapes, profile progression level systems, streaks trackers, badges milestones, and GDPR-compliant deletion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

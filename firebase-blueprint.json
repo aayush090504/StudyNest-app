@@ -1,0 +1,58 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user profiles, progression stats, badges, streaks, and preferences.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The unique user ID matching Firebase Auth UID." },
+        "displayName": { "type": "string", "description": "User's public display name." },
+        "email": { "type": "string", "description": "User's email address." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the profile was created." },
+        "isPremium": { "type": "boolean", "description": "Whether the user has premium access (subscription-ready)." },
+        "xp": { "type": "integer", "description": "Current total XP accumulated." },
+        "level": { "type": "integer", "description": "User's current level based on XP." },
+        "currentStreak": { "type": "integer", "description": "Current daily study streak count." },
+        "longestStreak": { "type": "integer", "description": "Longest daily study streak recorded." },
+        "lastStudyDate": { "type": "string", "description": "ISO date string of the last studied day (YYYY-MM-DD)." },
+        "totalMinutesStudied": { "type": "integer", "description": "Total study minutes logged." },
+        "badges": { "type": "array", "description": "List of unlocked badge IDs." },
+        "timerWorkMinutes": { "type": "integer", "description": "Custom default work session minutes." },
+        "timerBreakMinutes": { "type": "integer", "description": "Custom default break minutes." },
+        "timerLongBreakMinutes": { "type": "integer", "description": "Custom default long break minutes." },
+        "timerLongBreakInterval": { "type": "integer", "description": "Custom sessions before a long break." },
+        "theme": { "type": "string", "description": "Selected visual theme ID." },
+        "ambientSound": { "type": "string", "description": "Default selected ambient sound ID." },
+        "soundEnabled": { "type": "boolean", "description": "Whether UI sounds are enabled." },
+        "notificationsEnabled": { "type": "boolean", "description": "Whether push/browser notifications are enabled." }
+      },
+      "required": ["userId", "email", "xp", "level", "currentStreak", "longestStreak"]
+    },
+    "StudyLog": {
+      "title": "Study Log",
+      "description": "Represents a single completed focus session.",
+      "type": "object",
+      "properties": {
+        "logId": { "type": "string", "description": "Unique identifier of the log." },
+        "userId": { "type": "string", "description": "The UID of the user who completed the session." },
+        "startTime": { "type": "string", "format": "date-time", "description": "When the session started." },
+        "endTime": { "type": "string", "format": "date-time", "description": "When the session ended." },
+        "durationMinutes": { "type": "integer", "description": "Duration of the focus session in minutes." },
+        "subject": { "type": "string", "description": "Subject or tag for the study session." },
+        "xpGained": { "type": "integer", "description": "XP gained from this session." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp." }
+      },
+      "required": ["logId", "userId", "durationMinutes", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile document containing all persistent stats and settings."
+    },
+    "/users/{userId}/studyLogs/{logId}": {
+      "schema": "StudyLog",
+      "description": "Subcollection storing individual study sessions for a user."
+    }
+  }
+}
